@@ -147,6 +147,7 @@ d3.json("matches_data.json", function(error, graph) {
 // add image
   node.append("image")
       .attr("xlink:href", "https://github.com/favicon.ico")
+    .filter(function(d) { return d.x < width / 2; })
       .attr("x", -6)
       .attr("y", function(d) { return d.dy / 4 * 3; })
       .attr("width", 16)
