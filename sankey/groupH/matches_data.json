@@ -1,0 +1,29 @@
+{
+"links": [
+{"source": "Colômbia", "target": "1º", "value": 0.52682},
+{"source": "Colômbia", "target": "2º", "value": 0.29516},
+{"source": "Colômbia", "target": "3º", "value": 0.12844},
+{"source": "Colômbia", "target": "4º", "value": 0.04958},
+{"source": "Japão", "target": "1º", "value": 0.0922},
+{"source": "Japão", "target": "2º", "value": 0.20126},
+{"source": "Japão", "target": "3º", "value": 0.35798},
+{"source": "Japão", "target": "4º", "value": 0.34856},
+{"source": "Polônia", "target": "1º", "value": 0.32975},
+{"source": "Polônia", "target": "2º", "value": 0.36972},
+{"source": "Polônia", "target": "3º", "value": 0.20706},
+{"source": "Polônia", "target": "4º", "value": 0.09347},
+{"source": "Senegal", "target": "1º", "value": 0.05123},
+{"source": "Senegal", "target": "2º", "value": 0.13386},
+{"source": "Senegal", "target": "3º", "value": 0.30652},
+{"source": "Senegal", "target": "4º", "value": 0.50839}
+],
+"nodes": [
+{"name": "Colômbia", "color": "#FCD116"},
+{"name": "Japão", "color": "#BC002D"},
+{"name": "Polônia", "color": "#DC143C"},
+{"name": "Senegal", "color": "#00853F"},
+{"name":"1º","color":"#2E8B57"},
+{"name":"2º","color":"#3CB371"},
+{"name":"3º","color":"#bbb0ac"},
+{"name":"4º","color":"#bbb0ac"}
+] }
