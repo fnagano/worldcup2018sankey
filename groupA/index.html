@@ -148,10 +148,10 @@ d3.json("matches_data.json", function(error, graph) {
   node.append("image")
     .filter(function(d) { return d.x < width / 2; })
       .attr("xlink:href", "https://github.com/favicon.ico")
-      .attr("x", -6)
+      .attr("x", -18)
       .attr("y", function(d) { return d.dy / 4 * 3; })
-      .attr("width", 16)
-      .attr("height", 16);
+      .attr("width", 32)
+      .attr("height", 32);
  
 // the function for moving the nodes
   function dragmove(d) {
