@@ -26,4 +26,11 @@
 {"name":"2º","color":"#3CB371"},
 {"name":"3º","color":"#bbb0ac"},
 {"name":"4º","color":"#bbb0ac"}
-] }
+],
+"flags": [
+{"name": "Egito", "flag": [{"src":"https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/egypt.png"}]},
+{"name": "Rússia", "flag": [{"src":"https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/russia.png"}]},
+{"name": "Arábia Saudita", "flag": [{"src":"https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/saudi-arabia.png"}]},
+{"name": "Uruguai", "flag": [{"src":"https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/uruguay.png"}]}
+]
+}
