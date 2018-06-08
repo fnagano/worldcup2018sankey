@@ -1,64 +1,6 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['sankey']});
-      google.charts.setOnLoadCallback(drawChart);
-
-      function drawChart() {
-        var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Country');
-        data.addColumn('string', 'Position');
-        data.addColumn('number', 'Prob');
-        data.addRows([
-          ["Brazil","first_group",0.872525252525252],
-          ["Brazil","second_group",0.108686868686869],
-          ["Brazil","third_group",0.0187878787878788],
-          ["Brazil","fourth_group",0],
-          ["Costa Rica","first_group",0.0355555555555556],
-          ["Costa Rica","second_group",0.237979797979798],
-          ["Costa Rica","third_group",0.324848484848485],
-          ["Costa Rica","fourth_group",0.401616161616162],
-          ["Serbia","first_group",0.0385858585858586],
-          ["Serbia","second_group",0.291717171717172],
-          ["Serbia","third_group",0.301010101010101],
-          ["Serbia","fourth_group",0.368686868686869],
-          ["Switzerland","first_group",0.0533333333333333],
-          ["Switzerland","second_group",0.361616161616162],
-          ["Switzerland","third_group",0.355353535353535],
-          ["Switzerland","fourth_group",0.22969696969697]
-          ]);
-
-        // Sets chart options.
-    var colors = ['#009b3a', // Brazil
-                  '#55a8a3', // first_group
-                  '#ecc77e', // second_group
-                  '#ddbabd', // third_group
-                  '#d0838a', // fourth_group
-                  '#002b7f', // Costa Rica
-                  '#edb92e', //Serbia
-                  '#e30a17' // Switzerland
-                  ];
-
-    var options = {
-      height: 400,
-      sankey: {
-        node: {
-          colors: colors
-        }
-      }
-    };
-        // Instantiates and draws our chart, passing in some options.
-        var chart = new google.visualization.Sankey(document.getElementById('sankey_basic'));
-        chart.draw(data, options);
-      }
-    </script>
-  </head>
-  <body>
-    <div id="sankey_basic" style="width: 350px; height: 300px;"></div>
-  </body>
-  
-  <head>
+<head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 .switch {
@@ -143,4 +85,4 @@ input:checked + .slider:before {
 </label>
 
 </body>
-</html>
+</html> 
