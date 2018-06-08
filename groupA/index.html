@@ -140,7 +140,7 @@ d3.json("matches_data.json", function(error, graph) {
       .attr("transform", null)
       .text(function(d) { return d.name; })
     .filter(function(d) { return d.x > width / 2; })
-      .attr("x", -6 + sankey.nodeWidth())
+      .attr("x", 6 + sankey.nodeWidth())
       .attr("text-anchor", "start")
       .attr("y", function(d) { return d.dy / 2; });
  
