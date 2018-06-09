@@ -157,7 +157,7 @@ var flags = [
 // add image
   node.append("image")
     .filter(function(d) { return d.x < width / 2; })
-    .filter(function(d) { return d.name = "Egito" })
+    .filter(function(d) { return d.name == "Egito" })
       .attr("xlink:href", "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/egypt.png")
       .attr("x", -36)
       .attr("text-anchor", "end")
