@@ -31,6 +31,10 @@
 {"country": "Egito", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/egypt.png"},
 {"country": "Rússia", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/russia.png"},
 {"country": "Arábia Saudita", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/saudi-arabia.png"},
-{"country": "Uruguai", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/uruguay.png"}
+{"country": "Uruguai", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/uruguay.png"},
+{"country": "1º", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/egypt.png"},
+{"country": "2º", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/russia.png"},
+{"country": "3º", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/saudi-arabia.png"},
+{"country": "4º", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/uruguay.png"}
 ]
 }
