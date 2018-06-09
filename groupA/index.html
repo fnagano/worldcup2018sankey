@@ -85,6 +85,10 @@ d3.json("matches_data.json", function(error, graph) {
       };
     });
  
+// load flags
+d3.json("flags.json", function(data)
+	
+	
   sankey
       .nodes(graph.nodes)
       .links(graph.links)
@@ -147,7 +151,8 @@ d3.json("matches_data.json", function(error, graph) {
 // add image
   node.append("image")
     .filter(function(d) { return d.x < width / 2; })
-      .attr("xlink:href", "https://github.com/favicon.ico")
+      .attr("xlink:href", data.src)
+    //  .attr("xlink:href", "https://github.com/favicon.ico")
       .attr("x", -36)
       .attr("text-anchor", "end")
       .attr("y", function(d) { return d.dy / 3 *2; })
