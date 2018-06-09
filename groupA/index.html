@@ -157,7 +157,7 @@ var flags = [
 // add image
   node.append("image")
     .filter(function(d) { return d.x < width / 2; })
-      .attr("xlink:href", function(d) {return flags.image)})
+      .attr("xlink:href", return flags.image)
       .attr("x", -36)
       .attr("text-anchor", "end")
       .attr("y", function(d) { return d.dy / 3 *2; })
