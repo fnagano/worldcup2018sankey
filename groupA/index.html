@@ -25,11 +25,11 @@
   stroke-width: 1.5;
 }
 
-.link {
-  fill: none;
-  stroke: #000;
-  stroke-opacity: .2;
-}
+//.link {
+//  fill: none;
+//  stroke: #000;
+//  stroke-opacity: .2;
+//}
  
 //.link:hover {
 //  stroke: #ADD8E6;
@@ -93,13 +93,31 @@ d3.json("matches_data.json", function(error, graph) {
       .layout(32);
  
 // add in the links
-  var link = svg.append("g").selectAll(".link")
-      .data(graph.links)
-    .enter().append("path")
-      .attr("class", "link")
-      .attr("d", path)
-      .style("stroke-width", function(d) { return Math.max(1, d.dy); })
-      .sort(function(a, b) { return b.dy - a.dy; });
+//  var link = svg.append("g").selectAll(".link")
+//      .data(graph.links)
+//    .enter().append("path")
+//      .attr("class", "link")
+//      .attr("d", path)
+//      .style("stroke-width", function(d) { return Math.max(1, d.dy); })
+//      .sort(function(a, b) { return b.dy - a.dy; });
+
+// add in the links
+  const link = svg.append('g').selectAll('.link')
+    .data(graph.links)
+    .enter().append('path')
+      .attr('class', 'link')
+      .attr('d', path)
+      .style('stroke-width', d => Math.max(1, d.dy))
+      .style('fill', 'none')
+      .style('stroke-opacity', 0.18)
+      .sort((a, b) => b.dy - a.dy)
+      .on('mouseover', function() {
+        d3.select(this).style('stroke-opacity', 0.5);
+      })
+      .on('mouseout', function() {
+        d3.select(this).style('stroke-opacity', 0.2);
+      });
+	
  
 // add the link titles
   link.append("title")
