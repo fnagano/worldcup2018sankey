@@ -81,15 +81,11 @@ d3.json("matches_data.json", function(error, graph) {
         source: nodeMap[x.source],
         target: nodeMap[x.target],
         value: x.value,
-        color: x.color
-      };
-    });
-    graph.flags = graph.flags.map(function(x) {
-      return {
-        country: nodeMap[x.country],
+        color: x.color,
 	flag: x.flag
       };
     });
+
 	
   sankey
       .nodes(graph.nodes)
@@ -109,7 +105,7 @@ d3.json("matches_data.json", function(error, graph) {
   link.append("title")
         .text(function(d) {
       	return d.source.name + " → " + 
-                d.target.name + "\n" + format(d.value) + d.country.name; });
+                d.target.name + "\n" + format(d.value); });
  
 // add in the nodes
   var node = svg.append("g").selectAll(".node")
