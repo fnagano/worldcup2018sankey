@@ -93,6 +93,7 @@ d3.json("matches_data.json", function(error, graph) {
   sankey
       .nodes(graph.nodes)
       .links(graph.links)
+      .flags(graph.flags)
       .layout(32);
  
 // add in the links
