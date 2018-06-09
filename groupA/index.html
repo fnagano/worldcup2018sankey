@@ -86,7 +86,6 @@ d3.json("matches_data.json", function(error, graph) {
     });
     graph.flags = graph.flags.map(function(x) {
       return {
-        name: nodeMap[x.source],
         flag: x.flag
       };
     });
