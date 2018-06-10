@@ -18,12 +18,12 @@
 {"source":"Suíça","target":"4º","value":0.22969696969697}
 ],
 "nodes": [
-{"name":"Brasil","color":"#009b3a"},
-{"name":"Suíça","color":"#e30a17"},
-{"name":"Sérvia","color":"#edb92e"},
-{"name":"Costa Rica","color":"#002b7f"},
-{"name":"1º","color":"#2E8B57"},
-{"name":"2º","color":"#3CB371"},
-{"name":"3º","color":"#bbb0ac"},
-{"name":"4º","color":"#bbb0ac"}
+{"name":"Brasil","color":"#009b3a", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/brazil.png"},
+{"name":"Suíça","color":"#e30a17", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/switzerland.png"},
+{"name":"Sérvia","color":"#edb92e", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/serbia.png"},
+{"name":"Costa Rica","color":"#002b7f", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/costa-rica.png"},
+{"name":"1º","color":"#2E8B57", "flag": ""},
+{"name":"2º","color":"#3CB371", "flag": ""},
+{"name":"3º","color":"#bbb0ac", "flag": ""},
+{"name":"4º","color":"#bbb0ac", "flag": ""}
 ] }
