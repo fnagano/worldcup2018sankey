@@ -81,7 +81,8 @@ d3.json("matches_data.json", function(error, graph) {
         source: nodeMap[x.source],
         target: nodeMap[x.target],
         value: x.value,
-        color: x.color
+        color: x.color,
+	flag: x.flag,
       };
     });
  
