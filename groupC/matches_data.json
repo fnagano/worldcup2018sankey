@@ -18,12 +18,12 @@
 {"source": "Peru", "target": "4º", "value": 0.14089}
 ],
 "nodes": [
-{"name": "Austrália", "color": "#012169"},
-{"name": "Dinamarca", "color": "#C60C30"},
-{"name": "França", "color": "#002395"},
-{"name": "Peru", "color": "#D91023"},
-{"name":"1º","color":"#2E8B57"},
-{"name":"2º","color":"#3CB371"},
-{"name":"3º","color":"#bbb0ac"},
-{"name":"4º","color":"#bbb0ac"}
+{"name": "Austrália", "color": "#012169", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/australia.png"},
+{"name": "Dinamarca", "color": "#C60C30", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/denmark.png"},
+{"name": "França", "color": "#002395", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/france.png"},
+{"name": "Peru", "color": "#D91023", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/peru.png"},
+{"name":"1º","color":"#2E8B57", "flag": ""},
+{"name":"2º","color":"#3CB371", "flag": ""},
+{"name":"3º","color":"#bbb0ac", "flag": ""},
+{"name":"4º","color":"#bbb0ac", "flag": ""}
 ] }
