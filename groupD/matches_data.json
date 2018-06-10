@@ -18,12 +18,12 @@
 {"source": "Nigéria", "target": "4º", "value": 0.68186}
 ],
 "nodes": [
-{"name": "Argentina", "color": "#74ACDF"},
-{"name": "Croácia", "color": "#FF0000"},
-{"name": "Islândia", "color": "#02529C"},
-{"name": "Nigéria", "color": "#008751"},
-{"name":"1º","color":"#2E8B57"},
-{"name":"2º","color":"#3CB371"},
-{"name":"3º","color":"#bbb0ac"},
-{"name":"4º","color":"#bbb0ac"}
+{"name": "Argentina", "color": "#74ACDF", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/argentina.png"},
+{"name": "Croácia", "color": "#FF0000", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/croatia.png"},
+{"name": "Islândia", "color": "#02529C", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/iceland.png"},
+{"name": "Nigéria", "color": "#008751", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/nigeria.png"},
+{"name":"1º","color":"#2E8B57", "flag": ""},
+{"name":"2º","color":"#3CB371", "flag": ""},
+{"name":"3º","color":"#bbb0ac", "flag": ""},
+{"name":"4º","color":"#bbb0ac", "flag": ""}
 ] }
