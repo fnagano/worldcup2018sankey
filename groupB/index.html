@@ -146,7 +146,7 @@ d3.json("matches_data.json", function(error, graph) {
 	
 // add image
   node.append("image")
-    .filter(function(d) { return d.x < width / 2; })
+    .filter(function(d) { return d.x < width / 4; })
       .attr("xlink:href", function(d) { return d.flag; })
       .attr("x", -36)
       .attr("text-anchor", "middle")
