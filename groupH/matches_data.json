@@ -20,8 +20,8 @@
 "nodes": [
 {"name": "Colômbia", "color": "#FCD116", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/colombia.png"},
 {"name": "Japão", "color": "#BC002D", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/japan.png"},
-{"name": "Polônia", "color": "#DC143C", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/poland.png"},
-{"name": "Senegal", "color": "#00853F", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/senagal.png"},
+{"name": "Polônia", "color": "#DC143C", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/republic-of-poland.png"},
+{"name": "Senegal", "color": "#00853F", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/senegal.png"},
 {"name":"1º","color":"#2E8B57", "flag": ""},
 {"name":"2º","color":"#3CB371", "flag": ""},
 {"name":"3º","color":"#bbb0ac", "flag": ""},
