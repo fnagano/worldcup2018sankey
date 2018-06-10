@@ -18,12 +18,12 @@
 {"source": "Tunísia", "target": "4º", "value": 0.55457}
 ],
 "nodes": [
-{"name": "Bélgica", "color": "#FAE042"},
-{"name": "Inglaterra", "color": "#CF142B"},
-{"name": "Panamá", "color": "#005293"},
-{"name": "Tunísia", "color": "#E70013"},
-{"name":"1º","color":"#2E8B57"},
-{"name":"2º","color":"#3CB371"},
-{"name":"3º","color":"#bbb0ac"},
-{"name":"4º","color":"#bbb0ac"}
+{"name": "Bélgica", "color": "#FAE042", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/belgium.png"},
+{"name": "Inglaterra", "color": "#CF142B", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/england.png"},
+{"name": "Panamá", "color": "#005293", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/panama.png"},
+{"name": "Tunísia", "color": "#E70013", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/tunisia.png"},
+{"name":"1º","color":"#2E8B57", "flag": ""},
+{"name":"2º","color":"#3CB371", "flag": ""},
+{"name":"3º","color":"#bbb0ac", "flag": ""},
+{"name":"4º","color":"#bbb0ac", "flag": ""}
 ] }
