@@ -142,6 +142,16 @@ d3.json("matches_data.json", function(error, graph) {
     .filter(function(d) { return d.x > width / 2; })
       .attr("x", 6 + sankey.nodeWidth())
       .attr("text-anchor", "start");
+	
+// add image
+  node.append("image")
+    .filter(function(d) { return d.x < width / 2; })
+      .attr("xlink:href", function(d) { return d.flag; })
+      .attr("x", -36)
+      .attr("text-anchor", "end")
+      .attr("y", function(d) { return d.dy / 2; });
+	
+	
  
 // the function for moving the nodes
   function dragmove(d) {
