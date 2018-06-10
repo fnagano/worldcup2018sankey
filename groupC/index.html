@@ -47,8 +47,8 @@
   
 var units = "%";
  
-var margin = {top: 10, right: 10, bottom: 10, left: 10},
-    width = 340 - margin.left - margin.right,
+var margin = {top: 10, right: 70, bottom: 10, left: 70},
+    width = 500 - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom;
  
 var formatNumber = d3.format(",.2f"),    // zero decimal places
@@ -81,7 +81,8 @@ d3.json("matches_data.json", function(error, graph) {
         source: nodeMap[x.source],
         target: nodeMap[x.target],
         value: x.value,
-        color: x.color
+        color: x.color,
+	flag: x.flag
       };
     });
  
@@ -133,16 +134,25 @@ d3.json("matches_data.json", function(error, graph) {
  
 // add in the title for the nodes
   node.append("text")
-      .attr("x", -6)
+      .attr("x", 10)
       .attr("y", function(d) { return d.dy / 2; })
       .attr("dy", ".35em")
-      .attr("text-anchor", "end")
+      .attr("text-anchor", "start")
       .attr("transform", null)
       .text(function(d) { return d.name; })
     .filter(function(d) { return d.x > width / 2; })
       .attr("x", 6 + sankey.nodeWidth())
       .attr("text-anchor", "start");
  
+// add image
+  node.append("image")
+    .filter(function(d) { return d.x < width / 2; })
+      .attr("xlink:href", function(d) { return d.flag; })
+      .attr("x", -36)
+      .attr("text-anchor", "middle")
+      .attr("y", function(d) { return d.dy / 4; });
+	
+	
 // the function for moving the nodes
   function dragmove(d) {
     d3.select(this).attr("transform", 
