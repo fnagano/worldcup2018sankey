@@ -6,7 +6,7 @@
 .node rect {
   rx: 2;
   ry: 2;
-  cursor: move;
+//  cursor: move;
   stroke-width: 0;
   fill-opacity: .9;
   shape-rendering: crispEdges;
@@ -19,12 +19,10 @@
   pointer-events: none;
   text-shadow: 0 1px 0 #fff;
 }
-
 .node:hover rect {
   stroke: #ADD8E6;
   stroke-width: 1.5;
 }
-
 .link {
   fill: none;
   stroke: #000;
@@ -35,9 +33,10 @@
   stroke: #ADD8E6;
   stroke-opacity: .5;
 }
-
-#chart {
-  position: relative;
+	
+sankey {
+  margin-left: auto;
+  margin-right: auto;
 }
  
 </style>
@@ -51,7 +50,7 @@
   
 var units = "%";
  
-var margin = {top: 10, right: 70, bottom: 10, left: 70},
+var margin = {top: 10, right: 140, bottom: 10, left: 140},
     width = 500 - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom;
  
@@ -89,7 +88,7 @@ d3.json("matches_data.json", function(error, graph) {
 	flag: x.flag,
       };
     });
- 
+	
   sankey
       .nodes(graph.nodes)
       .links(graph.links)
@@ -103,6 +102,23 @@ d3.json("matches_data.json", function(error, graph) {
       .attr("d", path)
       .style("stroke-width", function(d) { return Math.max(1, d.dy); })
       .sort(function(a, b) { return b.dy - a.dy; });
+// add in the links
+//  const link = svg.append("g").selectAll(".link")
+//    .data(graph.links)
+//    .enter().append("path")
+//      .attr("class", "link")
+//      .attr("d", path)
+//      .style("stroke-width", function(d) { return Math.max(1, d.dy); })
+//      .style("fill", "none")
+//      .style("stroke-opacity", 0.18)
+//      .sort(function(a, b) { return b.dy - a.dy; });
+//      .on("mouseover", function() {
+//       d3.select(this).style("stroke-opacity", 0.5);
+//      })
+//      .on("mouseout", function() {
+//        d3.select(this).style("stroke-opacity", 0.2);
+//      });
+	
  
 // add the link titles
   link.append("title")
@@ -138,26 +154,26 @@ d3.json("matches_data.json", function(error, graph) {
  
 // add in the title for the nodes
   node.append("text")
-      .attr("x", 10)
-      .attr("y", function(d) { return d.dy / 2; })
+      .attr("x", -6)
+      .attr("y", function(d) { return d.dy / 5; })
       .attr("dy", ".35em")
-      .attr("text-anchor", "start")
+      .attr("text-anchor", "end")
       .attr("transform", null)
       .text(function(d) { return d.name; })
     .filter(function(d) { return d.x > width / 2; })
       .attr("x", 6 + sankey.nodeWidth())
-      .attr("text-anchor", "start");
+      .attr("text-anchor", "start")
+      .attr("y", function(d) { return d.dy / 2; });
 	
 // add image
   node.append("image")
     .filter(function(d) { return d.x < width / 2; })
       .attr("xlink:href", function(d) { return d.flag; })
       .attr("x", -36)
-      .attr("text-anchor", "middle")
-      .attr("y", function(d) { return d.dy / 4; });
+      .attr("text-anchor", "end")
+      .attr("y", function(d) { return d.dy / 2; });
 	
 	
- 
 // the function for moving the nodes
   function dragmove(d) {
     d3.select(this).attr("transform", 
