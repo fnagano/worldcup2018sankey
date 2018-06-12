@@ -124,7 +124,7 @@ d3.json("matches_data.json", function(error, graph) {
       .attr("class", "node")
       .attr("transform", function(d) { 
 		  return "translate(" + d.x + "," + d.y + ")"; })
-      .on("click",highlight_node_links) //NOVA
+      .on("mouseover",highlight_node_links) //NOVA
     .call(d3.behavior.drag()
       .origin(function(d) { return d; })
       // interfering with click .on("dragstart", function() { 
@@ -184,11 +184,11 @@ d3.json("matches_data.json", function(error, graph) {
     var remainingNodes=[],
         nextNodes=[];
     var stroke_opacity = 0;
-    if( d3.select(this).attr("data-clicked") == "1" ){
-      d3.select(this).attr("data-clicked","0");
+    if( d3.select(this).attr("mouseover") == "1" ){
+      d3.select(this).attr("mouseover","0");
       stroke_opacity = 0.2;
     }else{
-      d3.select(this).attr("data-clicked","1");
+      d3.select(this).attr("mouseover","1");
       stroke_opacity = 0.5;
     }
     var traverse = [{
