@@ -6,7 +6,7 @@
 .node rect {
   rx: 2;
   ry: 2;
-//  cursor: move;
+  cursor: move;
   stroke-width: 0;
   fill-opacity: .9;
   shape-rendering: crispEdges;
@@ -19,10 +19,12 @@
   pointer-events: none;
   text-shadow: 0 1px 0 #fff;
 }
+
 .node:hover rect {
   stroke: #ADD8E6;
   stroke-width: 1.5;
 }
+
 .link {
   fill: none;
   stroke: #000;
@@ -88,6 +90,7 @@ d3.json("matches_data.json", function(error, graph) {
 	flag: x.flag,
       };
     });
+
 	
   sankey
       .nodes(graph.nodes)
@@ -102,23 +105,6 @@ d3.json("matches_data.json", function(error, graph) {
       .attr("d", path)
       .style("stroke-width", function(d) { return Math.max(1, d.dy); })
       .sort(function(a, b) { return b.dy - a.dy; });
-// add in the links
-//  const link = svg.append("g").selectAll(".link")
-//    .data(graph.links)
-//    .enter().append("path")
-//      .attr("class", "link")
-//      .attr("d", path)
-//      .style("stroke-width", function(d) { return Math.max(1, d.dy); })
-//      .style("fill", "none")
-//      .style("stroke-opacity", 0.18)
-//      .sort(function(a, b) { return b.dy - a.dy; });
-//      .on("mouseover", function() {
-//       d3.select(this).style("stroke-opacity", 0.5);
-//      })
-//      .on("mouseout", function() {
-//        d3.select(this).style("stroke-opacity", 0.2);
-//      });
-	
  
 // add the link titles
   link.append("title")
@@ -173,6 +159,7 @@ d3.json("matches_data.json", function(error, graph) {
       .attr("text-anchor", "end")
       .attr("y", function(d) { return d.dy / 2; });
 	
+
 	
 // the function for moving the nodes
   function dragmove(d) {
