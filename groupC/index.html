@@ -32,7 +32,7 @@
 }
  
 .link:hover {
-  stroke: #ADD8E6;
+  stroke: #00688B;
   stroke-opacity: .5;
 }
 	
@@ -56,7 +56,7 @@ var margin = {top: 10, right: 140, bottom: 10, left: 140},
     width = 500 - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom;
  
-var formatNumber = d3.format(",.2f"),    // zero decimal places
+var formatNumber = d3.format(",.0f"),    // zero decimal places
     format = function(d) { return formatNumber(d*100) + units; },
     color = d3.scale.category20();
  
