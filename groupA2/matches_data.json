@@ -1,0 +1,30 @@
+{
+"links": [
+{"source": "Egito", "target": "1º", "value": 0.0709},
+{"source": "Egito", "target": "2º", "value": 0.21998},
+{"source": "Egito", "target": "3º", "value": 0.36855},
+{"source": "Egito", "target": "4º", "value": 0.34057},
+{"source": "Rússia", "target": "1º", "value": 0.2165},
+{"source": "Rússia", "target": "2º", "value": 0.41232},
+{"source": "Rússia", "target": "3º", "value": 0.24691},
+{"source": "Rússia", "target": "4º", "value": 0.12427},
+{"source": "Arábia Saudita", "target": "1º", "value": 0.04396},
+{"source": "Arábia Saudita", "target": "2º", "value": 0.14155},
+{"source": "Arábia Saudita", "target": "3º", "value": 0.30468},
+{"source": "Arábia Saudita", "target": "4º", "value": 0.50981},
+{"source": "Uruguai", "target": "1º", "value": 0.66864},
+{"source": "Uruguai", "target": "2º", "value": 0.22615},
+{"source": "Uruguai", "target": "3º", "value": 0.07986},
+{"source": "Uruguai", "target": "4º", "value": 0.02535}
+],
+"nodes": [
+{"name": "Egito", "color": "#C09300", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/egypt.png"},
+{"name": "Rússia", "color": "#0039A6", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/russia.png"},
+{"name": "Arábia Saudita", "color": "#006C35", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/saudi-arabia.png"},
+{"name": "Uruguai", "color": "#0038A8", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/uruguay.png"},
+{"name":"1º","color":"#2E8B57", "flag": "bla"},
+{"name":"2º","color":"#3CB371", "flag": "bla"},
+{"name":"3º","color":"#bbb0ac", "flag": "bla"},
+{"name":"4º","color":"#bbb0ac", "flag": "bla"}
+]
+}
