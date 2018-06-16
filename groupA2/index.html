@@ -62,11 +62,17 @@ var formatNumber = d3.format(",.0f"),    // zero decimal places
  
 // append the svg canvas to the page
 var svg = d3.select("#chart").append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
-  .append("g")
-    .attr("transform", 
-          "translate(" + margin.left + "," + margin.top + ")");
+ //   .attr("width", width + margin.left + margin.right)
+  //  .attr("height", height + margin.top + margin.bottom)
+ // .append("g")
+ //   .attr("transform", 
+ //         "translate(" + margin.left + "," + margin.top + ")")
+    .attr("width", '100%')
+    .attr("height", '100%')
+    .attr('viewBox','0 0 '+Math.min(width,height)+' '+Math.min(width,height))
+    .attr('preserveAspectRatio','xMinYMin')
+    .append("g")
+;
  
 // Set the sankey diagram properties
 var sankey = d3.sankey()
