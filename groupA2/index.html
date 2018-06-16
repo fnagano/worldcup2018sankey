@@ -37,15 +37,10 @@
 sankey {
   margin-left: auto;
   margin-right: auto;
-  height: 400px;
-  width: 100%;
 }
  
 </style>
 <body>
-	
-
-      <span id="value" style="visibility: hidden;"></span><br/>
  
 <p id="chart">
  
@@ -67,11 +62,9 @@ var formatNumber = d3.format(",.0f"),    // zero decimal places
 var svg = d3.select("#chart").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
-    .append("g")
+  .append("g")
     .attr("transform", 
-          "translate(" + margin.left + "," + margin.top + ")")
-
-;
+          "translate(" + margin.left + "," + margin.top + ")");
  
 // Set the sankey diagram properties
 var sankey = d3.sankey()
