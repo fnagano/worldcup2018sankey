@@ -18,10 +18,10 @@
 {"source": "Uruguai", "target": "4º", "value": 0.02535}
 ],
 "nodes": [
-{"name": "Egito", "color": "#C09300", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/egypt.png"},
-{"name": "Rússia", "color": "#0039A6", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/russia.png"},
-{"name": "Arábia Saudita", "color": "#006C35", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/saudi-arabia.png"},
-{"name": "Uruguai", "color": "#0038A8", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/uruguay.png"},
+{"name": "Egito", "namea": "", "nameb": "", "color": "#C09300", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/egypt.png"},
+{"name": "Rússia", "namea": "", "nameb": "", "color": "#0039A6", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/russia.png"},
+{"name": "", "namea": "Arábia", "nameb": "Saudita", "color": "#006C35", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/saudi-arabia.png"},
+{"name": "Uruguai", "namea": "", "nameb": "", "color": "#0038A8", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/uruguay.png"},
 {"name":"1º","color":"#2E8B57", "flag": "bla"},
 {"name":"2º","color":"#3CB371", "flag": "bla"},
 {"name":"3º","color":"#bbb0ac", "flag": "bla"},
