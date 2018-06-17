@@ -102,7 +102,19 @@ d3.json("matches_data.json", function(error, graph) {
       .attr("class", "link")
       .attr("d", path)
       .style("stroke-width", function(d) { return Math.max(1, d.dy); })
+      .sort(function(a, b) { return b.dy - a.dy; })
+  //teste
+      .attr("class", function(d) { return (d.causesCycle ? "cycleLink" : "link") })
+      .attr("d", path)
       .sort(function(a, b) { return b.dy - a.dy; });
+
+   var click_path = function(d) {
+    if (d3.event.defaultPrevented) return; // click suppressed
+    console.log("clicked " + d.name + "!");
+  };
+//fim do teste
+  d3.selectAll(".link") .on("click", click_path);
+  d3.selectAll(".cycleLink").on("click", click_path);
  
 // add the link titles
   link.append("title")
@@ -176,6 +188,7 @@ d3.json("matches_data.json", function(error, graph) {
       .attr("x", -36)
       .attr("text-anchor", "end")
       .attr("y", function(d) { return d.dy / 2; });
+	
 	
 	
 // the function for moving the nodes
