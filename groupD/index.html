@@ -16,15 +16,14 @@
   font-family: 'Helvetica Neue', Helvetica;
   font-weight: 300;
   padding: 20px;
+  font-size: 12px;
   pointer-events: none;
   text-shadow: 0 1px 0 #fff;
 }
-
 .node:hover rect {
   stroke: #ADD8E6;
   stroke-width: 1.5;
 }
-
 .link {
   fill: none;
   stroke: #000;
@@ -52,8 +51,8 @@ sankey {
   
 var units = "%";
  
-var margin = {top: 10, right: 140, bottom: 10, left: 140},
-    width = 480 - margin.left - margin.right,
+var margin = {top: 10, right: 65, bottom: 10, left: 65},
+    width = 290 - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom;
  
 var formatNumber = d3.format(",.0f"),    // zero decimal places
@@ -90,7 +89,6 @@ d3.json("matches_data.json", function(error, graph) {
 	flag: x.flag,
       };
     });
-
 	
   sankey
       .nodes(graph.nodes)
@@ -145,11 +143,29 @@ d3.json("matches_data.json", function(error, graph) {
       .attr("dy", ".35em")
       .attr("text-anchor", "end")
       .attr("transform", null)
-      .text(function(d) { return d.name; })
+      .text(function(d) { return d.namea; })
     .filter(function(d) { return d.x > width / 2; })
       .attr("x", 6 + sankey.nodeWidth())
       .attr("text-anchor", "start")
       .attr("y", function(d) { return d.dy / 2; });
+  node.append("text")
+      .attr("x", -6)
+      .attr("y", function(d) { return d.dy / 8; })
+      .attr("dy", ".35em")
+      .attr("text-anchor", "end")
+      .attr("transform", null)
+      .text(function(d) { return d.nameb; })
+	
+  node.append("text")
+      .attr("x", -6)
+      .attr("y", function(d) { return d.dy / 3; })
+      .attr("dy", ".35em")
+      .attr("text-anchor", "end")
+      .attr("transform", null)
+      .text(function(d) { return d.namec; })
+      
+	
+	
 	
 // add image
   node.append("image")
@@ -159,7 +175,6 @@ d3.json("matches_data.json", function(error, graph) {
       .attr("text-anchor", "end")
       .attr("y", function(d) { return d.dy / 2; });
 	
-
 	
 // the function for moving the nodes
   function dragmove(d) {
