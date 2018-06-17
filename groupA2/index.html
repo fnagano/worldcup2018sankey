@@ -148,6 +148,17 @@ d3.json("matches_data.json", function(error, graph) {
       .attr("text-anchor", "start")
       .attr("y", function(d) { return d.dy / 2; });
 	
+  node.append("text")
+      .attr("x", -6)
+      .attr("y", function(d) { return d.dy / 5; })
+      .attr("dy", ".35em")
+      .attr("text-anchor", "end")
+      .attr("transform", null)
+      .text(function(d) { return d.nameb; })
+
+	
+	
+	
 // add image
   node.append("image")
     .filter(function(d) { return d.x < width / 2; })
