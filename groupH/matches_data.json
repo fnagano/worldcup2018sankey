@@ -18,12 +18,12 @@
 {"source": "Senegal", "target": "4º", "value": 0.50839}
 ],
 "nodes": [
-{"name": "Colômbia", "color": "#FCD116", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/colombia.png"},
-{"name": "Japão", "color": "#BC002D", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/japan.png"},
-{"name": "Polônia", "color": "#DC143C", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/republic-of-poland.png"},
-{"name": "Senegal", "color": "#00853F", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/senegal.png"},
-{"name":"1º","color":"#2E8B57", "flag": ""},
-{"name":"2º","color":"#3CB371", "flag": ""},
-{"name":"3º","color":"#bbb0ac", "flag": ""},
-{"name":"4º","color":"#bbb0ac", "flag": ""}
+{"name": "Colômbia", "namea": "Colômbia", "nameb": "", "namec": "", "color": "#FCD116", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/colombia.png"},
+{"name": "Japão", "namea": "Japão", "nameb": "", "namec": "", "color": "#BC002D", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/japan.png"},
+{"name": "Polônia", "namea": "Polônia", "nameb": "", "namec": "", "color": "#DC143C", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/republic-of-poland.png"},
+{"name": "Senegal", "namea": "Senegal", "nameb": "", "namec": "", "color": "#00853F", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/senegal.png"},
+{"name":"1º","namea": "1º", "nameb": "", "namec": "", "color":"#2E8B57", "flag": ""},
+{"name":"2º","namea": "2º", "nameb": "", "namec": "", "color":"#3CB371", "flag": ""},
+{"name":"3º","namea": "3º", "nameb": "", "namec": "", "color":"#bbb0ac", "flag": ""},
+{"name":"4º","namea": "4º", "nameb": "", "namec": "", "color":"#bbb0ac", "flag": ""}
 ] }
