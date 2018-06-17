@@ -107,7 +107,7 @@ d3.json("matches_data.json", function(error, graph) {
         return "link-"+i;
       })
       .style("stroke-width", function(d) { return Math.max(1, d.dy); })
-      .sort(function(a, b) { return b.dy - a.dy; })
+      .sort(function(a, b) { return b.dy - a.dy; });
 
  
 // add the link titles
@@ -162,7 +162,7 @@ d3.json("matches_data.json", function(error, graph) {
       .attr("dy", ".35em")
       .attr("text-anchor", "end")
       .attr("transform", null)
-      .text(function(d) { return d.nameb; })
+      .text(function(d) { return d.nameb; });
 	
   node.append("text")
       .attr("x", -6)
@@ -170,7 +170,7 @@ d3.json("matches_data.json", function(error, graph) {
       .attr("dy", ".35em")
       .attr("text-anchor", "end")
       .attr("transform", null)
-      .text(function(d) { return d.namec; })
+      .text(function(d) { return d.namec; });
 
       
 	
