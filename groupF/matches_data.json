@@ -18,12 +18,12 @@
 {"source": "Suécia", "target": "4º", "value": 0.27677}
 ],
 "nodes": [
-{"name": "Alemanha", "color": "#DD0000", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/germany.png"},
-{"name": "México", "color": "#006847", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/mexico.png"},
-{"name": "Coreia do Sul", "color": "#024FA2", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/south-korea.png"},
-{"name": "Suécia", "color": "#FECD01", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/sweden.png"},
-{"name":"1º","color":"#2E8B57", "flag": ""},
-{"name":"2º","color":"#3CB371", "flag": ""},
-{"name":"3º","color":"#bbb0ac", "flag": ""},
-{"name":"4º","color":"#bbb0ac", "flag": ""}
+{"name": "Alemanha", "namea": "Alemanha", "nameb": "", "namec": "", "color": "#DD0000", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/germany.png"},
+{"name": "México", "namea": "México", "nameb": "", "namec": "", "color": "#006847", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/mexico.png"},
+{"name": "Coreia do Sul", "namea": "", "nameb": "Coreia", "namec": "do Sul", "color": "#024FA2", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/south-korea.png"},
+{"name": "Suécia", "namea": "Suécia", "nameb": "", "namec": "", "color": "#FECD01", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/sweden.png"},
+{"name":"1º","namea": "1º", "nameb": "", "namec": "", "color":"#2E8B57", "flag": ""},
+{"name":"2º","namea": "2º", "nameb": "", "namec": "", "color":"#3CB371", "flag": ""},
+{"name":"3º","namea": "3º", "nameb": "", "namec": "", "color":"#bbb0ac", "flag": ""},
+{"name":"4º","namea": "4º", "nameb": "", "namec": "", "color":"#bbb0ac", "flag": ""}
 ] }
