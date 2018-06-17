@@ -143,26 +143,17 @@ d3.json("matches_data.json", function(error, graph) {
       .attr("text-anchor", "end")
       .attr("transform", null)
       .text(function(d) { return d.namea; })
+      .attr("y", function(d) { return d.dy / 8; })
+      .text(function(d) { return d.nameb; })
+      .attr("y", function(d) { return d.dy / 3; })
+      .text(function(d) { return d.namec; })
     .filter(function(d) { return d.x > width / 2; })
       .attr("x", 6 + sankey.nodeWidth())
       .attr("text-anchor", "start")
       .attr("y", function(d) { return d.dy / 2; });
 	
-  node.append("text")
-      .attr("x", -6)
-      .attr("y", function(d) { return d.dy / 8; })
-      .attr("dy", ".35em")
-      .attr("text-anchor", "end")
-      .attr("transform", null)
-      .text(function(d) { return d.nameb; })
 
-  node.append("text")
-      .attr("x", -6)
-      .attr("y", function(d) { return d.dy / 4; })
-      .attr("dy", ".35em")
-      .attr("text-anchor", "end")
-      .attr("transform", null)
-      .text(function(d) { return d.namec; })
+      
 	
 	
 	
