@@ -150,12 +150,19 @@ d3.json("matches_data.json", function(error, graph) {
 	
   node.append("text")
       .attr("x", -6)
-      .attr("y", function(d) { return d.dy / 5; })
+      .attr("y", function(d) { return d.dy / 8; })
       .attr("dy", ".35em")
       .attr("text-anchor", "end")
       .attr("transform", null)
       .text(function(d) { return d.nameb; })
 
+  node.append("text")
+      .attr("x", -6)
+      .attr("y", function(d) { return d.dy / 4; })
+      .attr("dy", ".35em")
+      .attr("text-anchor", "end")
+      .attr("transform", null)
+      .text(function(d) { return d.namec; })
 	
 	
 	
