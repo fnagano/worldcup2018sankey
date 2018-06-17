@@ -22,9 +22,9 @@
 {"name": "Rússia", "namea": "Rússia", "nameb": "", "namec": "", "color": "#0039A6", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/russia.png"},
 {"name": "Teste 1234", "namea": "", "nameb": "Arábia", "namec": "Saudita", "color": "#006C35", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/saudi-arabia.png"},
 {"name": "Uruguai", "namea": "Uruguai", "nameb": "", "namec": "", "color": "#0038A8", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/uruguay.png"},
-{"name":"1º","color":"#2E8B57", "flag": "bla"},
-{"name":"2º","color":"#3CB371", "flag": "bla"},
-{"name":"3º","color":"#bbb0ac", "flag": "bla"},
-{"name":"4º","color":"#bbb0ac", "flag": "bla"}
+{"name":"1º", "namea": "1º", "nameb": "", "namec": "", "color":"#2E8B57", "flag": "bla"},
+{"name":"2º", "namea": "2º", "nameb": "", "namec": "", "color":"#3CB371", "flag": "bla"},
+{"name":"3º", "namea": "3º", "nameb": "", "namec": "", "color":"#bbb0ac", "flag": "bla"},
+{"name":"4º", "namea": "4º", "nameb": "", "namec": "", "color":"#bbb0ac", "flag": "bla"}
 ]
 }
