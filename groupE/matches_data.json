@@ -21,7 +21,7 @@
 {"name":"Brasil","namea": "Brasil", "nameb": "", "namec": "", "color":"#009b3a", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/brazil.png"},
 {"name":"Suíça","namea": "Suíça", "nameb": "", "namec": "", "color":"#e30a17", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/switzerland.png"},
 {"name":"Sérvia","namea": "Sérvia", "nameb": "", "namec": "", "color":"#edb92e", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/serbia.png"},
-{"name":"Costa Rica","namea": "Costa Rica", "nameb": "", "namec": "", "color":"#002b7f", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/costa-rica.png"},
+{"name":"Costa Rica","namea": "", "nameb": "Costa", "namec": "Rica", "color":"#002b7f", "flag": "https://raw.githubusercontent.com/lucasnoveline/worldcup2018/master/flags32/costa-rica.png"},
 {"name":"1º","namea": "1º", "nameb": "", "namec": "", "color":"#2E8B57", "flag": ""},
 {"name":"2º","namea": "2º", "nameb": "", "namec": "", "color":"#3CB371", "flag": ""},
 {"name":"3º","namea": "3º", "nameb": "", "namec": "", "color":"#bbb0ac", "flag": ""},
